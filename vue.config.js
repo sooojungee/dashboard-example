@@ -2,7 +2,7 @@ module.exports = {
   devServer: {
     host: '0.0.0.0',
     disableHostCheck: true,
-    proxy: 'http://https://sooojungee.github.io/',
+    proxy: 'https://sooojungee.github.io/',
   },
   baseUrl: '/dashboard',
   outputDir: undefined,
