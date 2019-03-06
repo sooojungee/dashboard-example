@@ -1,6 +1,8 @@
 <template>
   <v-app app>
-    <v-card height="100%">
+    <v-card height="100%"
+            class="main-card"
+            flat>
       <v-navigation-drawer v-model="drawer"
                            class="nav-image nav-drawer"
                            width="260"
@@ -53,8 +55,7 @@
         <v-flex xs6
                 sm3
                 md2>
-          <v-text-field color="#ddd"
-                        label="Search.."></v-text-field>
+          <v-text-field label="Search.."></v-text-field>
         </v-flex>
         <v-btn icon
                class="custom-btn"
@@ -92,6 +93,7 @@
         <router-view></router-view>
       </v-content>
     </v-card>
+    <v-divider color="#dedede"></v-divider>
     <v-footer class="pa-3 footer">
       <span class="footerlink"> HOME </span>
       <span class="footerlink"> CREATIVE TIME </span>
@@ -197,10 +199,6 @@ body {
   color: transparent;
 }
 
-input {
-  color: red;
-}
-
 .menu-button {
   position: relative;
 }
@@ -216,6 +214,7 @@ input {
 }
 
 .footerlink:hover {
+  cursor: pointer;
   color: purple;
 }
 
@@ -232,6 +231,10 @@ input {
   font-size: 12px;
   padding: 15px;
   line-height: 1.8;
+}
+
+.main-card {
+  background: #eee !important;
 }
 </style>
 

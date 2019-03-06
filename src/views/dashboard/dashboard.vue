@@ -1,5 +1,6 @@
 <template>
-  <v-container class="dashboard fill-height fluid grid-list-xl">
+  <v-container class="dashboard fill-height fluid grid-list-xl"
+               height="100%">
     <v-flex md12
             sm12
             lg4
@@ -336,7 +337,7 @@
           <v-tabs-items v-model="tabs">
             <v-tab-item v-for="item in taskItems"
                         :key="item.title">
-              <v-list three-line>
+              <v-list class>
                 <v-list-tile v-for="item in taskContents"
                              :key="item.text"
                              @click="">
@@ -386,7 +387,7 @@
 <script src="./dashboard.ts" lang="ts">
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 // @import "@/style/_common.scss";
 // .flex.lg4 {
 //   @media screen and (max-width: 990px) {
@@ -466,7 +467,6 @@
   border: 0px solid;
   height: auto;
   border-radius: 4px;
-  background: red;
 }
 
 .custom-btn::before {
@@ -521,5 +521,9 @@ th {
 
 .justify-center {
   text-align: center;
+}
+
+.v-list__tile__content {
+  width: 100%;
 }
 </style>
