@@ -60,7 +60,7 @@
         <v-btn icon
                class="custom-btn"
                style="border-radius: 0px; width: 50px; height: 50px;"
-               href="/dashboard">
+               to="/dashboard">
           <v-icon>dashboard</v-icon>
         </v-btn>
         <v-menu transition="slide-y-transition"
