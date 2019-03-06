@@ -71,7 +71,7 @@
                    v-on="on"
                    class="custom-btn"
                    style="border-radius: 0px; width: 50px; height: 50px;">
-              <v-icon>more_vert</v-icon>
+              <v-icon>favorite</v-icon>
             </v-btn>
           </template>
           <v-list class="menu-position">
