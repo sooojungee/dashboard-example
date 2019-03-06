@@ -4,7 +4,7 @@ module.exports = {
     disableHostCheck: true,
     proxy: 'https://sooojungee.github.io/',
   },
-  baseUrl: '/dashboard',
+  baseUrl: '/dashboard-example',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
